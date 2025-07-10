@@ -3,7 +3,9 @@
 <suite name="AutomationSuite">
     <listeners>
         <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+        <listener class-name="utils.ScreenshotListener"/>
     </listeners>
+
     <test name="UI Tests">
         <classes>
             <class name="ui.tests.LoginTest"/>

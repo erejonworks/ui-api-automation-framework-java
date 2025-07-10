@@ -14,8 +14,8 @@ public abstract class BaseTest {
     public void setUp() {
 //        driver = DriverFactory.createDriver("chrome");
 //        driver.get(ConfigManager.get("base.url")); // 🔁 URL dinámico
-        String browser = ConfigManager.get("browser");
-        driver = DriverFactory.createDriver(browser);
+        String browser = ConfigManager.getProperty("browser");
+        driver = DriverFactory.createDriver();
 
 
     }

@@ -20,9 +20,9 @@ public class LoginTest extends BaseTest {
     @Severity(SeverityLevel.CRITICAL)
     public void testSuccessfulLogin() {
         LoginPage loginPage = new LoginPage(driver);
-        String baseURL = ConfigManager.get("base.url");
-        String user = ConfigManager.get("username");
-        String pwd = ConfigManager.get("password");
+        String baseURL = ConfigManager.getProperty("base.url");
+        String user = ConfigManager.getProperty("username");
+        String pwd = ConfigManager.getProperty("password");
         loginPage.navigateTo(baseURL);
 //        loginPage.navigateTo(Environment.BASE_UI_URL);
 //        loginPage.login("standard_user", "secret_sauce");
